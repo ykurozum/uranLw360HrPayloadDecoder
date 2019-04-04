@@ -19,7 +19,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 public class Lw360hrPayloadDecoder implements PayloadDecoder {
 
 	/**
-	 * Lw360のPayload変換処理
+	 * Lw360hrのPayload変換処理
 	 * 
 	 * @param encodedPayloadList 変換対象のリスト
 	 * @return decodeInfoList デコード情報のリスト
@@ -38,16 +38,16 @@ public class Lw360hrPayloadDecoder implements PayloadDecoder {
 
 			// payloadStringからpayload_hexを取得
 			String hexStr = payload.getPayloadString();
-			
+
 			// payload存在チェック
 			if (hexStr != null && !hexStr.isEmpty())
 				// protocolチェック
 				if (hexStr.startsWith(ProtocolSummary.PERIOD_REPORT.getCode(), 2)
 						|| hexStr.startsWith(ProtocolSummary.ALARM_REPORT.getCode(), 2)) {
-					
+
 					RportBean rBean = new RportBean();
-					
-					Report.decodeReport(payloadObject, hexStr,rBean);
+
+					Report.decodeReport(payloadObject, hexStr, rBean);
 					decodeInfo = makeDecodeInfo(payloadObject, payload, rBean.getDateTime());
 
 				} else { // unknwonProtocol

@@ -18,7 +18,7 @@ public class Lw360hrPayloadDecoderTest {
 		Date date = new Date();
 
 		// payloadStringからpayload_hexを取得
-		String hexStr = "12022679967e0879967e0842zz2C015a84097d5babcdefghijklmnopqrstuvwxyzabcdefghijklmn20d15b5b2c0b401f8813";
+		String hexStr = "12022679967e0879967e0842zz2C015a84097d5babcdefghijklmnopqrstuvwxyzabcdefghijklmn18d15b5b2c0b401f8813";
 		String hexStr2 = "12002579967e0879967e0842zz2C015a84097d5babcdefghijklmnopqrstuvwxyzabcdefghijklmn18d15b5b2c0b401f8813";
 		
 		// 日時,デコード用文字列(payload_hex),DeviceIdentifyerを入力

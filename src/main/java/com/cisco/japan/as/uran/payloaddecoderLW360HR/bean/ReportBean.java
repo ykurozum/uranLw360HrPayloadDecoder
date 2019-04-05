@@ -2,7 +2,7 @@ package com.cisco.japan.as.uran.payloaddecoderLW360HR.bean;
 
 import java.util.Date;
 
-public class RportBean {
+public class ReportBean {
 
 	/**
 	 * ProtocolVersion

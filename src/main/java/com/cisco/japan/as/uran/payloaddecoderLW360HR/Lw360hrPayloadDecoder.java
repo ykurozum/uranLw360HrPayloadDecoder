@@ -8,7 +8,7 @@ import com.cisco.japan.as.uran.payloaddecoder.DecodedPayload;
 import com.cisco.japan.as.uran.payloaddecoder.EncodedPayload;
 import com.cisco.japan.as.uran.payloaddecoder.PayloadDecoder;
 import com.cisco.japan.as.uran.payloaddecoder.util.CommonUtils;
-import com.cisco.japan.as.uran.payloaddecoderLW360HR.bean.RportBean;
+import com.cisco.japan.as.uran.payloaddecoderLW360HR.bean.ReportBean;
 import com.cisco.japan.as.uran.payloaddecoderLW360HR.constants.NodeElements;
 import com.cisco.japan.as.uran.payloaddecoderLW360HR.constants.ProtocolSummary;
 import com.cisco.japan.as.uran.payloaddecoderLW360HR.constants.UnknownStatus;
@@ -45,7 +45,7 @@ public class Lw360hrPayloadDecoder implements PayloadDecoder {
 				if (hexStr.startsWith(ProtocolSummary.PERIOD_REPORT.getCode(), 2)
 						|| hexStr.startsWith(ProtocolSummary.ALARM_REPORT.getCode(), 2)) {
 
-					RportBean rBean = new RportBean();
+					ReportBean rBean = new ReportBean();
 
 					Report.decodeReport(payloadObject, hexStr, rBean);
 					decodeInfo = makeDecodeInfo(payloadObject, payload, rBean.getDateTime());

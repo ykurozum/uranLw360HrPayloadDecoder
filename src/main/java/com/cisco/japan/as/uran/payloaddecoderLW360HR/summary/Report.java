@@ -3,7 +3,7 @@ package com.cisco.japan.as.uran.payloaddecoderLW360HR.summary;
 import java.util.Date;
 
 import com.cisco.japan.as.uran.payloaddecoder.util.CommonUtils;
-import com.cisco.japan.as.uran.payloaddecoderLW360HR.bean.RportBean;
+import com.cisco.japan.as.uran.payloaddecoderLW360HR.bean.ReportBean;
 import com.cisco.japan.as.uran.payloaddecoderLW360HR.constants.BeaconId;
 import com.cisco.japan.as.uran.payloaddecoderLW360HR.constants.BeaconType;
 import com.cisco.japan.as.uran.payloaddecoderLW360HR.constants.NodeElements;
@@ -39,7 +39,7 @@ public class Report {
 	 * @param rBean 
 	 * @param hrBean        HelpReport格納用Bean
 	 */
-	public static void decodeReport(ObjectNode payloadObject, String hexStr, RportBean rBean) {
+	public static void decodeReport(ObjectNode payloadObject, String hexStr, ReportBean rBean) {
 
 		// hexStrのlengthチェック
 		if (CommonUtils.checkPayloadLength(hexStr, MAX_LENGTH)) {

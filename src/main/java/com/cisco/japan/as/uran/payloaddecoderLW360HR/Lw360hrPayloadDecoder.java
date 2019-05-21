@@ -24,7 +24,7 @@ public class Lw360hrPayloadDecoder implements PayloadDecoder {
 	 * @param encodedPayloadList 変換対象のリスト
 	 * @return decodeInfoList デコード情報のリスト
 	 */
-	public List<DecodedPayload> encode(List<EncodedPayload> encodedPayloadList) throws Exception {
+	public List<DecodedPayload> decode(List<EncodedPayload> encodedPayloadList) throws Exception {
 
 		// ObjectMapperを作成
 		ObjectMapper mapper = new ObjectMapper();

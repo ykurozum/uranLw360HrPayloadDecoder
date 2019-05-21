@@ -29,7 +29,7 @@ public class Lw360hrPayloadDecoderTest {
 		str.add(test1);
 		str.add(test2);
 		
-		List<DecodedPayload> decodeInfoList = target.encode(str);
+		List<DecodedPayload> decodeInfoList = target.decode(str);
 
 		// 結果をリスト分出力
 		for (DecodedPayload decodeInfo : decodeInfoList) {

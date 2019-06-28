@@ -36,7 +36,7 @@ public class Lw360hrPayloadDecoderTest {
 			System.out.println("--------start--------");
 			System.out.println("PayloadString:" + decodeInfo.getPayloadString());
 			System.out.println("Time:" + decodeInfo.getTime());
-			System.out.println("PayloadJson:" + decodeInfo.getPalyloadJson());
+			System.out.println("PayloadJson:" + decodeInfo.getPayloadJson());
 			System.out.println("PayloadTime:" + decodeInfo.getPayloadTime());
 			System.out.println("DeviceIdentifyer:" + decodeInfo.getDeviceIdentifiyer());
 			System.out.println("--------end--------");
